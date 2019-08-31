@@ -217,6 +217,7 @@ describe "Grocer" do
         coupons = [find_coupon('BEER')]
 
         consolidated = consolidate_cart(cart)
+        puts "Consolidated: #{Consolidated}"
         coupons_applied = apply_coupons(consolidated, coupons)
         clearance_applied = apply_clearance(coupons_applied)
 
